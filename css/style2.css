@@ -1,0 +1,180 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    margin: 0;
+    background-color: #eeeee7;
+    font-family: "Open Sans";
+}
+
+@font-face {
+    font-family: "Open sans";
+    src: url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap);
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+    color: #be1116;
+}
+
+.text {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.page {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.field {
+    border: none;
+    width: 350px;
+    color: #999991;
+  }
+
+  .field:focus {
+    background:#eeeee7;
+    color: #000;
+    outline: 2px outset #94090d;
+    outline-offset: 3px;
+  }
+
+  .form-group {
+    display: flex;
+    margin-bottom: 10px;
+  }
+
+  .button {
+    color: #fff;
+    background-color: #94090d;
+    border: none;
+  }
+
+  .button:hover {
+    background-color: #fff;
+    cursor: pointer;
+    color: #94090d;
+    border: 2px solid #94090d;
+  }
+
+  .news {
+    display: flex;
+    font-size: 1.5rem;
+}
+
+.news__content {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.news__list {
+  padding-top: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+@media (min-width: 641px) {
+    .page {
+      width: 360px;
+    }
+    .form {
+        margin-top: 20px;
+    }
+
+    .form-group {
+      width: 360px;
+      justify-content: flex-end;
+    }
+
+    .text {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+
+    .name {
+        font-size: 2rem;
+    }
+
+    .field {
+        font-size: 1.5rem;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-left: 10px;
+        border: none;
+        width: 350px;
+        height: 35px;
+      }
+
+      .button {
+        color: #fff;
+        background-color: #94090d;
+        border: none;
+        padding: 10px;
+        margin-top: 10px;
+        margin-left: 20px;
+      }
+
+      .news__content {
+        width: 358px;
+    }
+}
+
+  @media (max-width: 640px) {
+    .page {
+      width: 310px;
+    }
+
+    .form {
+        margin-top: 20px;
+    }
+
+    .form-group {
+      justify-content: center;
+    }
+
+    .text {
+        display: flex;
+        justify-content: center;
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
+
+    .name {
+        font-size: 2.5rem;
+    }
+
+    .field {
+        font-size: 2rem;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        padding-left: 10px;
+        width: 300px;
+        height: 55px;
+      }
+
+    .button {
+        font-size: 2rem;
+        padding: 20px;
+        margin-top: 20px;
+        margin-left: 20px;
+      }
+
+    .news {
+        margin-top: 30px;
+        flex-direction: column;
+        font-size: 2rem;
+    }
+
+    .news__list {
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+  }
